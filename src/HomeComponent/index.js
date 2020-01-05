@@ -196,8 +196,8 @@ class HomeComponent extends React.Component {
         {/* <Control/ledCarousel /> */}
         {/* <DemoCarousel slider={this.state.footerSlides}/> */}
 
-        <FooterBottom />
-        <FooterTop />
+        {/* <FooterBottom />
+        <FooterTop /> */}
         {/* <FooterMiddle /> */}
       </div>
     );

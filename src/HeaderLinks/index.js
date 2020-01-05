@@ -47,12 +47,19 @@ class HeaderLinks extends React.Component {
           <span className="services-drop-holder">
             <span onClick={this.servicesDropdownStatus}>Services <img className="downarrooow" src={downarrow} alt="down"/></span>
             {serviceopen && <ul>
-              <NavLink to="/services/l1" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>About Us</NavLink>
-              <NavLink to="/services/l2" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>About Us</NavLink>
-              <NavLink to="/services/l3" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>About Us</NavLink>
-              <NavLink to="/services/l4" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>About Us</NavLink>
-              <NavLink to="/services/l5" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>About Us</NavLink>
-              <NavLink to="/services/l6" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>About Us</NavLink>
+              <NavLink to="/services/termitepestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>termite pest control</NavLink>
+              <NavLink to="/services/cockroachpestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>cockroach pest control</NavLink>
+              <NavLink to="/services/bedbugpestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>bedbug pest control</NavLink>
+              <NavLink to="/services/antpestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>ant pest control</NavLink>
+              <NavLink to="/services/beepestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>bee pest control</NavLink>
+              <NavLink to="/services/spiderpestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>spider pest control</NavLink>
+              <NavLink to="/services/Rodentpestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>Rodent pest control</NavLink>
+              <NavLink to="/services/snakepestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>snake pest control</NavLink>
+              <NavLink to="/services/Mosquitopestcontrol" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>Mosquito pest control</NavLink>
+              <NavLink to="/services/Mosquitomeshservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>Mosquitomesh control</NavLink>
+              <NavLink to="/services/residentialpestcontrol" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>residential pest control</NavLink>
+              <NavLink to="/services/Commericalpestcontrol" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>Commerical pest control</NavLink>
+              <NavLink to="/services/industrialpestcontrol" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>industrial pest control</NavLink>
             </ul> }
           </span>
           <NavLink to="/contactus" activeStyle={{ color: 'red' }}>Contact Us</NavLink>

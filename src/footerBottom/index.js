@@ -103,7 +103,7 @@ class FooterTop extends React.Component {
             <div className="footer_copy_right">
                 <div className="container">
                     <h4>
-                    Copyright ©{document.write(new Date().getFullYear())}2020 All rights reserved By <a href="/" target="_blank"> My Mark Pest Control</a></h4>
+                    Copyright ©{new Date().getFullYear()}2020 All rights reserved By <a href="/" target="_blank"> My Mark Pest Control</a></h4>
                 </div>
             </div>
         </footer>

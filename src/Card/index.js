@@ -8,7 +8,7 @@ class Card extends React.Component {
           <div><img src={content.icon} /></div>
           <h2>{content.name}</h2>
           <div>{content.content}</div>
-          <a href={content.more}className="more" >Read More ...</a>
+          {content.more !== '' && <a href={content.more}className="more" >Read More ...</a>}
         </div>
       </div>
     );

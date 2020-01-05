@@ -6,6 +6,19 @@
     .text-center{
         text-align: center;
     }
+    .header_top_area{
+        background: #ddd;
+        text-align: center;
+        .pull-left{
+            display: grid;
+            justify-content: normal;
+            grid-template-columns: auto auto auto;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
     @import 'variables';
     @import 'Header/index.scss';
     @import 'BodyContent/index.scss';
