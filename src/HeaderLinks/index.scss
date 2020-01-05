@@ -1,0 +1,51 @@
+.Header-links-holder{
+    float: right;
+    a{  
+        text-decoration: none;
+        padding: 26px;
+        display: inline-block;
+        &:hover{
+            color: green;
+        }
+    }
+    .location-drop-holder{
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+    }
+    .services-drop-holder{
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+    }
+    img.downarrooow {
+        width: 19px;
+        top: 4px;
+        position: relative;
+    }
+    ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        border: 1px solid;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+        top: 60px;
+        height: 100px;
+        overflow: auto;
+        a{
+            display: block;
+            &:hover{
+                background: #ccc;
+                color: white;
+            }
+            li{
+                list-style: none;
+                display: block;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}

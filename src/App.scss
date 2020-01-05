@@ -1,0 +1,77 @@
+
+.white-back-black-text#root{
+    overflow: hidden;
+    font-family: sans-serif;
+    line-height: 2;
+    .text-center{
+        text-align: center;
+    }
+    @import 'variables';
+    @import 'Header/index.scss';
+    @import 'BodyContent/index.scss';
+    @import 'HomeComponent/index.scss';
+    @import 'controlArea/index.scss';
+    @import 'Card/index.scss';
+    @import  'HeaderLink/index.scss';
+    @import 'HeaderLinks/index.scss';
+    @import 'footerTop/index.scss';
+    @import  'footerBottom/index.scss';
+    @import 'footerMiddle/index.scss';
+    background: $app_bc_color;
+    transition:  all 1s ease;
+    .app-content{
+        width:$app_width;
+        margin: auto;
+        .swiper-container{
+            img{
+                width: 100%;
+                height: 300px;
+                margin-top: 10px;
+                object-fit: fill;
+            }
+        }
+        
+
+    }
+    .more{
+        padding: 10px;
+        position: absolute;
+        color: #474545;
+        background: white;
+        border: 1px solid #474545;
+        text-decoration: none;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        width: 111px;
+        left: 0;
+        right: 0;
+        margin-bottom: 20px;
+        &:hover{
+            background: #444444;
+            color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        }
+    }
+    .ash{
+        color: #444444;
+    }
+    .desc {
+        img{
+            width: 200px;
+            float: right;
+        }
+    }
+    .oo{
+        color: $app_text_color;
+    }
+}
+.inline-block{
+    display: inline-block;
+}
+.float-right{
+    float: right;
+}
+.c-pointer{
+    cursor: pointer;
+}
