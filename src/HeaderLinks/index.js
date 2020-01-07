@@ -31,21 +31,21 @@ class HeaderLinks extends React.Component {
     var serviceopen = this.state.servicesopen;
     return (
       <div className="Header-links-holder">
-          <NavLink to="/" exact activeStyle={{ color: 'red' }}>Home</NavLink>
-          <NavLink to="/aboutus" activeStyle={{ color: 'red' }}>About Us</NavLink>
+          <NavLink to="/" exact activeStyle={{ color: 'red' }} className="text-hover-zoom">Home</NavLink>
+          <NavLink to="/aboutus" activeStyle={{ color: 'red' }}  className="text-hover-zoom">About Us</NavLink>
           <span className="location-drop-holder">
-            <span onClick={this.locationsDropdownStatus}>Locations <img className="downarrooow" src={downarrow} alt="down" /></span>
+            <span onClick={this.locationsDropdownStatus} className="text-hover-zoom">Locations <img className="downarrooow" src={downarrow} alt="down" /></span>
             {locationopen && <ul>
-              <NavLink to="/locations/l1" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>About Us</NavLink>
-              <NavLink to="/locations/l2" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>About Us</NavLink>
-              <NavLink to="/locations/l3" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>About Us</NavLink>
-              <NavLink to="/locations/l4" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>About Us</NavLink>
-              <NavLink to="/locations/l5" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>About Us</NavLink>
-              <NavLink to="/locations/l6" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>About Us</NavLink>
+              <NavLink to="/locations/l1" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>location1</NavLink>
+              <NavLink to="/locations/l2" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>location2</NavLink>
+              <NavLink to="/locations/l3" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>location3</NavLink>
+              <NavLink to="/locations/l4" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>location4</NavLink>
+              <NavLink to="/locations/l5" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>location5</NavLink>
+              <NavLink to="/locations/l6" activeStyle={{ color: 'red' }}  onClick={this.locationsDropdownStatus}>location6</NavLink>
             </ul> }
           </span>
           <span className="services-drop-holder">
-            <span onClick={this.servicesDropdownStatus}>Services <img className="downarrooow" src={downarrow} alt="down"/></span>
+            <span onClick={this.servicesDropdownStatus} className="text-hover-zoom">Services <img className="downarrooow" src={downarrow} alt="down"/></span>
             {serviceopen && <ul>
               <NavLink to="/services/termitepestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>termite pest control</NavLink>
               <NavLink to="/services/cockroachpestcontrolservices" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>cockroach pest control</NavLink>
@@ -62,7 +62,7 @@ class HeaderLinks extends React.Component {
               <NavLink to="/services/industrialpestcontrol" activeStyle={{ color: 'red' }} onClick={this.servicesDropdownStatus}>industrial pest control</NavLink>
             </ul> }
           </span>
-          <NavLink to="/contactus" activeStyle={{ color: 'red' }}>Contact Us</NavLink>
+          <NavLink to="/contactus" activeStyle={{ color: 'red' }} className="text-hover-zoom">Contact Us</NavLink>
       </div>
     );
   }

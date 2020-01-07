@@ -1,10 +1,6 @@
-import React, { Children } from 'react';
+import React from 'react';
 import Card from '../Card';
 import ControlArea from '../controlArea';
-import FooterBottom from '../footerTop';
-import FooterTop from '../footerBottom';
-import FooterMiddle from '../footerMiddle';
-import DemoCarousel from './swiper.js';
 
 import homeswiper from '../images/home-slider/slider-1.gif';
 import fr from '../images/pest control services in Hyderabad.jpg';
@@ -135,12 +131,11 @@ class HomeComponent extends React.Component {
   render(){
     var cards = this.state.cards;
     var controlAreas = this.state.controlAreas;
-    debugger;
     return (
       <div className="Fact-container">
         <div className="swiper-container">
-          <img src={homeswiper} className="swiper-image"/>
-          <span  className="p-a top">
+          <img src={homeswiper} className="swiper-image"alt=""/>
+          <span  className="p-a top text-shadow">
             <div>We are Pest Control</div>
             <div>we Remove pests </div>
           </span>
@@ -148,7 +143,7 @@ class HomeComponent extends React.Component {
         <div className="desc  app-content ash">
           <div>
             <img className="f-r" src={fr} alt="fr"/>
-            <div>
+            <div className="text-justify">
               <h1><b>Pest Control Services In Hyderabad</b></h1>
               <p>My Mark Pest Control Hyderabad provides Best Pest control in Hyderabad and Secunderabad to residential and commercial properties. All our pest control services in Hyderabad are performed by well trained and expert technicians. We keep from top to bottom standards of quality and safety. My Mark Pest Control Hyderabad takes every protection to ensure your home and business is pest free. We offer guaranteed pest control in Hyderabad and Secunderabad for the residential and commercial property. We are the Leading Pest Control Services Provider in Hyderabad for any kinds of Information call us at 9949700744. Or Mail us at : mymarkpest@gmail.com</p>
             </div>
@@ -165,7 +160,7 @@ class HomeComponent extends React.Component {
             
           </div>
         </div>
-        <div className="app-content">
+        <div className="app-content text-justify">
           <div className="text-center">
               <h2>PEST CONTROL <br className="title_br" /> SERVICES</h2>
               <h6>PEST CONTROL HYDERABAD, SECUNDERABAD AND KUKATPALLY <br className="sub_br" /></h6>

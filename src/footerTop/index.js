@@ -3,7 +3,7 @@ import contactIcon1 from '../images/icon/place-icon.png';
 import contactIcon2 from '../images/icon/phone-icon.png';
 import contactIcon3 from '../images/icon/inbox-icon.png';
 class FooterBottom extends React.Component {
-  render(){
+    render(){
     return (
       <div className="footerbottom app-content">
         <section className="address_area">
@@ -26,8 +26,8 @@ class FooterBottom extends React.Component {
                                 <img src={contactIcon2} alt="Pest Control Services In Hyderabad" />
                             </div>
                             <div className="media-body">
-                                <a href="tel:9949700744" className="external" target="_blank"><h5>9949700744</h5></a>
-                                <a href="tel:8008055750" className="external" target="_blank"><h5>8008055750</h5></a>
+                                <a href="tel:9949700744" className=" text-hover-zoom"><h5>9949700744</h5></a>
+                                <a href="tel:8008055750" className="text-hover-zoom"><h5>8008055750</h5></a>
                             </div>
                         </div>
                     </div>

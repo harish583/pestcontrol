@@ -4,6 +4,12 @@
         text-decoration: none;
         padding: 26px;
         display: inline-block;
+        color: grey;
+        // border-bottom: 1px solid;
+        // &:last-child{
+        //     border: none;
+        // }
+        
         &:hover{
             color: green;
         }
@@ -12,11 +18,19 @@
         position: relative;
         display: inline-block;
         padding: 10px;
+        cursor: pointer;
+        &:hover{
+            color: green;
+        }
     }
     .services-drop-holder{
+        cursor: pointer;
         position: relative;
         display: inline-block;
         padding: 10px;
+        &:hover{
+            color: green;
+        }
         ul{
             background: white;
             a{
@@ -33,7 +47,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        border: 1px solid;
+        border: 1px solid #c1c1c1;
         padding: 0;
         margin: 0;
         width: 220px;
@@ -43,6 +57,11 @@
         overflow-x: hidden;
         a{
             display: block;
+            border-bottom: 1px solid;
+            &:last-child{
+                border: none;
+
+            }
             &:hover{
                 background: #ccc;
                 color: white;

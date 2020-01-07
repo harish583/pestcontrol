@@ -1,5 +1,9 @@
 import React from 'react';
 import ico from '../images/3rd.png';
+
+import {
+    NavLink
+  } from "react-router-dom";
 class FooterTop extends React.Component {
 
   render(){
@@ -14,10 +18,10 @@ class FooterTop extends React.Component {
                                 <img src={ico} alt="Pest Control Services In Hyderabad" />
                                 <p>My Mark Pest Control Services is the Leading Pest Control Services Provider in Hyderabad. We provide all types of Pest Control Solution. If you have any pest we have a solution.</p>
                                 {/* <ul>
-                                    <li><a href="https://www.facebook.com/mymarkpestcontrol/" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/Mymark20588134" target="_blank"><i className="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://plus.google.com/u/0/110372272849400959298" target="_blank"><i className="fa fa-google-plus"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/my-mark-pest-control-services/" target="_blank"><i className="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.facebook.com/mymarkpestcontrol/" target="_blank"  rel="noopener noreferrer"><i className="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/Mymark20588134" target="_blank"  rel="noopener noreferrer"><i className="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://plus.google.com/u/0/110372272849400959298" target="_blank"  rel="noopener noreferrer"><i className="fa fa-google-plus"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/my-mark-pest-control-services/" target="_blank"  rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a></li>
                                 </ul> */}
                             </aside>
                         </div>
@@ -29,25 +33,26 @@ class FooterTop extends React.Component {
                                 <div className="recent_w_inner">
                                     <div className="media">
                                         <div className="media-body">
-                                            <a href="#"><p>Anti-Termite</p></a>
+                                        <NavLink to="/services/termitepestcontrolservices">Anti-Termite</NavLink>
                                         </div>
                                     </div>
                                     <div className="media">                                        
                                         <div className="media-body">
-                                            <a href="#"><p>Cockroach</p></a>
+                                        <NavLink to="/services/cockroachpestcontrolservices" >Cockroach</NavLink>
                                         </div>
                                     </div>
 									<div className="media">
                                         <div className="media-body">
-                                            <a href="#"><p>Bedbug</p></a>
+                                        <NavLink to="/services/bedbugpestcontrolservices">Bedbug</NavLink>
                                         </div>
                                     </div><div className="media">
                                         <div className="media-body">
-                                            <a href="#"><p>Residential</p></a>
+                                        <NavLink to="/services/residentialpestcontrol">Residential</NavLink>
                                         </div>
                                     </div><div className="media">
                                         <div className="media-body">
-                                            <a href="#"><p>Industrial</p></a>
+                                        <NavLink to="/services/industrialpestcontrol">Industrial</NavLink>
+                                        
                                         </div>
                                     </div>
                                 </div>
@@ -73,8 +78,8 @@ class FooterTop extends React.Component {
                                         </div>
                                         <div className="media-body">
                                             
-                                <a href="tel:9949700744" className="external" target="_blank"><p>9949700744</p></a>
-                                <a href="tel:8008055750" className="external" target="_blank"><p>8008055750</p></a>
+                                <a href="tel:9949700744" className=" text-hover-zoom"><p>9949700744</p></a>
+                                <a href="tel:8008055750" className="text-hover-zoom"><p>8008055750</p></a>
                                         </div>
                                     </div>
                                     <div className="media">
@@ -92,7 +97,7 @@ class FooterTop extends React.Component {
                         <div className="col-md-3 col-sm-6">
                             <aside className="f_widget give_us_widget">
                                 <h5>Give Us A Call</h5>
-                                <a href="tel:9949700744" className="external" target="_blank"><h4>9949700744</h4></a>
+                                <a href="tel:9949700744" className="text-hover-zoom"><h4>9949700744</h4></a>
                                 <h5>or</h5>
                                 <a className="get_bg_btn" href="contactus.html">GET A QUOTE</a>
                             </aside>
@@ -103,7 +108,7 @@ class FooterTop extends React.Component {
             <div className="footer_copy_right">
                 <div className="container">
                     <h4>
-                    Copyright ©{new Date().getFullYear()}2020 All rights reserved By <a href="/" target="_blank"> My Mark Pest Control</a></h4>
+                    Copyright ©{new Date().getFullYear()}2020 All rights reserved By <a href="/"> My Mark Pest Control</a></h4>
                 </div>
             </div>
         </footer>

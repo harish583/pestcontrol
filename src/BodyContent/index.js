@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import AboutUs from '../aboutUs';
 import Service from '../services';
+import ContactUs from '../contactUs';
 import termswiper from '../images/anona-slider-3.jpg';
 import termcontentImage from '../images/pre-cons-right.jpg';
 import cockroachpestswiper from '../images/main_german-cockroach-banner-image-desktop.jpg';
@@ -163,6 +164,7 @@ class BodyContent extends React.Component {
           <Switch>
             <Route path="/" exact><HomeComponent /></Route>
             <Route path="/aboutus"><AboutUs /></Route>
+            <Route path="/contactus"><ContactUs /></Route>
             <Route path="/services/termitepestcontrolservices"><Service  Service={service.termitepestcontrolservices}/></Route>
             <Route path="/services/cockroachpestcontrolservices"><Service Service={service.cockroachpestcontrolservices} /></Route>
             <Route path="/services/bedbugpestcontrolservices"><Service Service={service.bedbugpestcontrolservices} /></Route>

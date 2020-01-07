@@ -8,7 +8,6 @@ class DemoCarousel extends Component {
         super(props);
     }
     render() {
-        debugger;
         var {slider} = this.props;
         return (
             <Carousel>

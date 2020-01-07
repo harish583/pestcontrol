@@ -5,7 +5,7 @@ class ControlArea extends React.Component {
     return (
       <div className="ControlArea w-25 text-center">
         <div className="ControlArea-content">
-          <div><img src={content.icon} /></div>
+          <div><img src={content.icon} alt=""/></div>
           <h2>{content.name}</h2>
           <div>{content.content}</div>
           <a href={content.more} className="more" >Read More ...</a>
