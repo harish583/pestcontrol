@@ -98,9 +98,9 @@ class AboutUs extends React.Component {
                 </div>
             </div>
         </section>
-        <div className="cards-component app-content">
+        {/* <div className="cards-component app-content">
           {cards.map((ele,i)=> <Card content={ele} key={i}/> )} 
-        </div>
+        </div> */}
         <div className="service_single_inner app-content">          
           <div className="row s_text_inner">
             <div className="col-md-6">

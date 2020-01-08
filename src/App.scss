@@ -3,13 +3,6 @@
     overflow: hidden;
     font-family: sans-serif;
     line-height: 2;
-    // img{
-    //     transition: all 1s ease;
-    //     &:hover{
-    //         transform: scale(1.05);
-    //         transition: all 1s ease;
-    //     }
-    // }
     .text-hover-zoom{
         transition:  all 2s ease;
         &:hover{
@@ -42,7 +35,6 @@
     }
     .text-shadow{
         text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em darkblue;
-        
     };
     .text-justify {
         text-align: justify;
@@ -58,12 +50,9 @@
     @keyframes lineInserted2 {
         0% {
         max-width: 0;
-        // margin-left: 0;
         }
         100%{
             max-width: 100%;
-        // margin:auto;
-        // margin-left: auto;
         }
     }
     @keyframes rightToLeft {
@@ -81,6 +70,7 @@
     @import 'HomeComponent/index.scss';
     @import 'controlArea/index.scss';
     @import 'Card/index.scss';
+    @import 'CardStyle/index.scss';
     @import  'HeaderLink/index.scss';
     @import 'HeaderLinks/index.scss';
     @import 'footerTop/index.scss';

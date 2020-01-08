@@ -33,10 +33,6 @@ import Commericalswiper from '../images/slider3.jpg';
 import CommericalcontentImage from '../images/pre-cons-right.jpg';
 import industrialswiper from '../images/slider4.jpg';
 import industrialcontentImage from '../images/pre-cons-right.jpg';
-// import termswiper from '../images/';
-// import termcontentImage from '../images/pre-cons-right.jpg';
-// import termswiper from '../images/';
-// import termcontentImage from '../images/pre-cons-right.jpg';
 class BodyContent extends React.Component {
   constructor(props){
     super(props);
@@ -145,15 +141,7 @@ class BodyContent extends React.Component {
           textHeader:'Industrial Pest Control Services in Hyderabad',
           textContent:["Industrial Pest Control in Hyderabad. My Mark pest Control Services provides the best Industrial Pest control in Hyderabad. We eliminate all types of pest Control like mosquitoes, rodents, termites and other insects. If you are looking for Industrial pest Control Services contact us.","In The Industrial areas Store rooms are the most pest affected areas so if you clean your Store rooms you avoid pests.","By using the modern technologies and highly qualified technician we eliminate your pests and clean your Industry for any kind of information call us at 9949700744. Or Mail us at: mymarkpest@gmail.com"],
           contentImage:industrialcontentImage
-        },
-        // {
-        //   swiperImage:'',
-        //   swiperMainHeadding:'',
-        //   swiperHeadding:'',
-        //   textHeader:'',
-        //   textContent:'',
-        //   contentImage:''
-        // },
+        }
       }
     }
   }

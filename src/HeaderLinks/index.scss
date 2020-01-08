@@ -5,14 +5,13 @@
         padding: 26px;
         display: inline-block;
         color: grey;
-        // border-bottom: 1px solid;
-        // &:last-child{
-        //     border: none;
-        // }
         
         &:hover{
             color: green;
         }
+    }
+    ul{
+        display: none;
     }
     .location-drop-holder{
         position: relative;
@@ -21,6 +20,9 @@
         cursor: pointer;
         &:hover{
             color: green;
+            ul{
+                display: block;
+            }
         }
     }
     .services-drop-holder{
@@ -30,6 +32,10 @@
         padding: 10px;
         &:hover{
             color: green;
+            ul{
+
+                display: block;
+            }
         }
         ul{
             background: white;
@@ -51,7 +57,7 @@
         padding: 0;
         margin: 0;
         width: 220px;
-        top: 60px;
+        top: 45px;
         max-height: 60vh;
         overflow: auto;
         overflow-x: hidden;

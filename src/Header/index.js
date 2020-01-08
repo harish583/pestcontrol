@@ -1,5 +1,4 @@
 import React from 'react';
-// import './index.scss';
 import icon from '../images/2nd.png';
  import HeaderLinks from '../HeaderLinks';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card';
+import CardStyle from '../CardStyle';
 import ControlArea from '../controlArea';
 
 import homeswiper from '../images/home-slider/slider-1.gif';
@@ -27,65 +28,65 @@ class HomeComponent extends React.Component {
       cards :[
         {
           name:"cockroach",
-          more:'#',
+          more:'services/cockroachpestcontrolservices',
           content:'The cockroach is characterized by a two-dimensional oval body, long filiform antennae',
           icon:cockroach
         },{
           name:"spider",
-          more:'#',
+          more:'services/spiderpestcontrolservices',
           content:'Spiders are crawling pests it has 2 body segments, 8 legs, no adduction mouth components and',
           icon:spider
         },{
           name:"ant",
-          more:'#',
+          more:'services/antpestcontrolservices',
           content:'Ant is a small insect typically having a sting. Ant is a crawling pest. Ants are a social ',
           icon:ant
         },
         {
           name:"Bedbug",
-          more:'#',
+          more:'services/bedbugpestcontrolservices',
           content:'Bed bugs have small, flat, oval-shaped bodies. They are wingless. Bed Bug is crawling Pest.',
           icon:beetle
         },{
           name:"Bee",
-          more:'#',
+          more:'services/beepestcontrolservices',
           content:'Bees are flying insects closely related to wasps. Most of the bees find at white clover,',
           icon:Bee
         },{
           name:"Rodent",
-          more:'#',
+          more:'services/Rodentpestcontrolservices',
           content:'Mice and rats are damage to your property and spread disease. For this purpose, you have to ',
           icon:Rodent
         },
         {
           name:"Termite",
-          more:'#',
+          more:'services/termitepestcontrolservices',
           content:'Termites are most arrive in during the spring and summer month. Termites sometimes are cryptic',
           icon:Termite
         },{
           name:"Snake",
-          more:'#',
+          more:'services/snakepestcontrolservices',
           content:'The behavior of the snakes is the vital factor to grasp is that almost all snakes are non-venomous',
           icon:Snake
         },{
           name:"Mosquito",
-          more:'#',
+          more:'services/Mosquitopestcontrol',
           content:'Mosquitoes are a slender long-legged fly with aquatic larvae.Most of the Mosquitoes find at the',
           icon:Mosquito
         },
         {
           name:"Mosquito Mesh",
-          more:'#',
+          more:'services/Mosquitomeshservices',
           content:'We provide all types of Mosquito Meshes like Open type mosquito net, Shutter type mosquito net..',
           icon:MosquitoMesh
         },{
           name:"RESIDENTIAL",
-          more:'#',
+          more:'services/residentialpestcontrol',
           content:'Residential Pest conteol services in Hyderabad.Most of the Pest find',
           icon:RESIDENTIAL
         },{
           name:"INDUSTRIAL",
-          more:'#',
+          more:'services/industrialpestcontrol',
           content:'We provide all types of INDUSTRIAL PEST CONTROL SERVICES',
           icon:INDUSTRIAL
         },
@@ -93,17 +94,23 @@ class HomeComponent extends React.Component {
       controlAreas:[
         {
           name:"Industrial pest control",
-          more:'#',
+          more:'services/industrialpestcontrol',
           content:'We eliminate all types of pest Control like mosquitoes, rodents, termites ',
+          icon:industry
+        },
+        {
+          name:"Corporate Pest Control",
+          more:'#',
+          content:'We give 100% guarantee to making your Corporate pest free according to which you can contact us',
           icon:industry
         },{
           name:"commercial pest control",
-          more:'#',
+          more:'services/Commericalpestcontrol',
           content:'We eliminate all types of pest Control like mosquitoes, rodents, termites,',
           icon:cmmerical
         },{
           name:"RESIDENTAL pest control",
-          more:'#',
+          more:'services/residentialpestcontrol',
           content:'We eliminate all types of pest Control like insect control, termite control,',
           icon:residential
         },
@@ -140,26 +147,24 @@ class HomeComponent extends React.Component {
             <div>we Remove pests </div>
           </span>
         </div>
-        <div className="desc  app-content ash">
-          <div>
-            <img className="f-r" src={fr} alt="fr"/>
-            <div className="text-justify">
-              <h1><b>Pest Control Services In Hyderabad</b></h1>
-              <p>My Mark Pest Control Hyderabad provides Best Pest control in Hyderabad and Secunderabad to residential and commercial properties. All our pest control services in Hyderabad are performed by well trained and expert technicians. We keep from top to bottom standards of quality and safety. My Mark Pest Control Hyderabad takes every protection to ensure your home and business is pest free. We offer guaranteed pest control in Hyderabad and Secunderabad for the residential and commercial property. We are the Leading Pest Control Services Provider in Hyderabad for any kinds of Information call us at 9949700744. Or Mail us at : mymarkpest@gmail.com</p>
-            </div>
+        <div className="app-content text-center">
+          <h2>OUR <br className="title_br" /> Pest control Areas</h2>
+          <h6>Great & Awesome Works</h6> 
+          <div className="cards-styles-component">
+            {controlAreas.map((ele,i)=> <CardStyle content={ele} key={i}/> )}
           </div>
         </div>
         <div className="cards-component app-content">
           {cards.map((ele,i)=> <Card content={ele} key={i}/> )} 
         </div>
-        <div className="app-content text-center">
+        {/* <div className="app-content text-center">
           <h2>OUR <br className="title_br" /> Pest control Areas</h2>
-          <h6>Great & Awesome Works</h6>
-          <div className="row latest_news_inner">
+          <h6>Great & Awesome Works</h6> */}
+          {/* <div className="row latest_news_inner">
             {controlAreas.map((ele,i)=><ControlArea content={ele} key={i}/>)}
             
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
         <div className="app-content text-justify">
           <div className="text-center">
               <h2>PEST CONTROL <br className="title_br" /> SERVICES</h2>
@@ -176,24 +181,8 @@ class HomeComponent extends React.Component {
           <p>With our 24-hour reaction time, we have a tendency to make sure you can have your pest control issue addressed immediately. We have a tendency to create pest protection simple and hassle-free, providing you with the simplest client service expertise within the business. </p>
           <p>If you want any type of information regarding the pest control services to call us on 9949700744 or Click on below.</p>
         </div>
-        <section className="app-content">
-            <div className="">
-                <div className="work_content">
-                    <div className="main_c_title text-center">
-                        <h2>Contact <br className="title_br" /> us</h2>
-                        <h6>Pest Control Services in Hyderabad</h6>
-                    </div>
-                    <p>You have Any pest problem We have Solution For All Pests. For More details call us on 9949700744 or Mail : mymarkpest@gmail.com</p>
-                    <a className="btn" href="#">Call now</a>
-                </div>
-            </div>
-        </section>
         {/* <Control/ledCarousel /> */}
         {/* <DemoCarousel slider={this.state.footerSlides}/> */}
-
-        {/* <FooterBottom />
-        <FooterTop /> */}
-        {/* <FooterMiddle /> */}
       </div>
     );
   }
