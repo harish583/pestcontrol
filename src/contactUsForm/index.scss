@@ -1,0 +1,36 @@
+
+    .container{
+        .row{
+
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .contact-form{
+            input{
+                padding: 10px;
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+            .bbb{
+                text-align: center;
+            }
+            button{
+                width: 200px;
+                padding: 10px;
+                margin: auto;
+                display: inline-block;
+                border: 1px solid;
+                cursor: pointer;
+                background: white;
+                color: yellowgreen;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: white;
+                    background: yellowgreen;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }

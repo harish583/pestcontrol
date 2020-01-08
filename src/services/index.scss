@@ -4,4 +4,8 @@
             font-size: 25px;
         }
     }
+    .chose_video_area{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }

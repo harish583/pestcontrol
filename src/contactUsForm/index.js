@@ -1,22 +1,15 @@
 import React from 'react';
 import './index.scss';
-import contactusbanner from '../images/banner-bg.jpg';
-import ContactUsForm from '../contactUsForm';
+import ContactUsFormbanner from '../images/banner-bg.jpg';
 
-class ContactUs extends React.Component {
+class ContactUsForm extends React.Component {
   render(){
-    return (
-      <div className="contactus-container-service">
-        <div className="swiper-container">
-          <img src={contactusbanner} className="swiper-image" alt=""/>
-          <span  className="p-a top text-shadow">
-          <div>Contact us </div>
-          <div>Home / ContactUs</div>
-          </span>
-        </div>
-        <div className="contact-page-area">
-            {/* <div className="row"> */}
-                {/* <div className="col-lg-6 container">
+    return (<>
+      
+      <div className="container">
+      <div className="ContactUsForm">
+            <div className="row">
+                <div className="col-lg-6 container">
                     <div className="contact-form">
                         <h3><span>Get in </span> touch with us! </h3>
                         <p>Don't hesitate to contact us to get a free Enquiry on Pest Control Services</p>
@@ -70,13 +63,12 @@ class ContactUs extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </div> */}
-            <ContactUsForm />
-        {/* </div> */}
-    </div>
+            </div>
         </div>
+      </div>
+      </>
     );
   }
 }
 
-export default ContactUs;
+export default ContactUsForm;

@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../Card';
 import CardStyle from '../CardStyle';
 import ControlArea from '../controlArea';
+import ContactUsForm from '../contactUsForm';
 
 import homeswiper from '../images/home-slider/slider-1.gif';
 import fr from '../images/pest control services in Hyderabad.jpg';
@@ -180,6 +181,10 @@ class HomeComponent extends React.Component {
           <p>We provide Termite Pest control in Hyderabad, Cockroach Pest control Services in Hyderabad, Bedbug Pest Removal Services in Hyderabad, Rodent Pest Control in Hyderabad, Spider Pest Control Services in Hyderabad, Ants control services in Hyderabad. We provide Mosquito Mesh Services and Mosquito Mesh products in Hyderabad.</p>
           <p>With our 24-hour reaction time, we have a tendency to make sure you can have your pest control issue addressed immediately. We have a tendency to create pest protection simple and hassle-free, providing you with the simplest client service expertise within the business. </p>
           <p>If you want any type of information regarding the pest control services to call us on 9949700744 or Click on below.</p>
+        </div>
+        <div className="app-content">
+          <h2>Contact Us </h2>
+          <ContactUsForm />
         </div>
         {/* <Control/ledCarousel /> */}
         {/* <DemoCarousel slider={this.state.footerSlides}/> */}

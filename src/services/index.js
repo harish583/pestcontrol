@@ -1,16 +1,32 @@
 import React from 'react';
 import './index.scss';
+import { Link } from "react-router-dom";
 
 class Services extends React.Component {
+    state = {
+      newValuesOfObject : []
+    }
+    componentDidMount=()=>{
+      var service = this.props.allServices;
+      var onlyValues= [];
+      for (let value of Object.values(service)) {
+        onlyValues.push(value);
+      }
+      this.setState({
+        newValuesOfObject:onlyValues
+      })
+    }
     render(){
-    var { Service } = this.props;
+    var { Service, allServices } = this.props;
+    var newValuesOfObject = this.state.newValuesOfObject;
+    debugger;
     return (
       <div className="Fact-container-service">
         <div className="swiper-container">
           <img src={Service.swiperImage} className="swiper-image" alt=""/>
           <span  className="p-a top text-shadow">
-    <div>{Service.swiperMainHeadding}</div>
-    <div>{Service.swiperHeadding}</div>
+            <div>{Service.swiperMainHeadding}</div>
+            <div>{Service.swiperHeadding}</div>
           </span>
         </div>
          <section className="chose_video_area app-content">
@@ -23,6 +39,13 @@ class Services extends React.Component {
 					
                 </div>
             </div>
+            </div>
+            <div className="servivessss">
+              <ul>
+                {newValuesOfObject.map((ele,i)=>{
+                  return <li className=""><Link to={ele.url} >{ele.swiperHeadding}</Link></li>
+                })}
+              </ul>
             </div>
         </section>
         </div>
