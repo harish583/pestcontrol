@@ -6,14 +6,14 @@ class ContactUsForm extends React.Component {
   render(){
     return (<>
       
-      <div className="container">
+      <div className="container contact-us-form">
       <div className="ContactUsForm">
             <div className="row">
-                <div className="col-lg-6 container">
+                <div className="col-lg-6">
                     <div className="contact-form">
-                        <h3><span>Get in </span> touch with us! </h3>
+                        {/* <h3><span>Get in </span> touch with us! </h3>
                         <p>Don't hesitate to contact us to get a free Enquiry on Pest Control Services</p>
-                        
+                         */}
                         <form className="form-horizontal" action="insert.php" method="POST" encType="multipart/form-data">
                           <div className="form-group">
                             <label className="control-label col-sm-2" htmlFor="email-n">Name:</label>
@@ -47,7 +47,7 @@ class ContactUsForm extends React.Component {
                         </form>
                     </div>
                 </div>
-                <div className="col-lg-6">
+                {/* <div className="col-lg-6">
                     <div className="contact-page-info">
                         <h3>Head Office</h3>
                         <ul className="border-bottom">
@@ -63,6 +63,7 @@ class ContactUsForm extends React.Component {
                         </ul>
                     </div>
                 </div>
+             */}
             </div>
         </div>
       </div>

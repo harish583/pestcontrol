@@ -1,7 +1,6 @@
 
-    .container{
+    .contact-us-form{
         .row{
-
             display: grid;
             grid-template-columns: auto auto;
         }
@@ -11,7 +10,8 @@
                 width: 100%;
             }
             textarea{
-                width: 100%;
+                // width: 100%;
+                height: 100px;
             }
             .bbb{
                 text-align: center;

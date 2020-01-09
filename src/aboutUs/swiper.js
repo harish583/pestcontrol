@@ -13,7 +13,7 @@ class DemoCarousel extends Component {
             <Carousel>
                 {slider.map((slide,i)=>
                 <div>
-                    <img src="assets/1.jpeg" />
+                    {/* <img src="assets/1.jpeg" /> */}
                     <p className="">
                         hhaha
                     </p>

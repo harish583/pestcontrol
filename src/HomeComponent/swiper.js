@@ -10,23 +10,16 @@ class DemoCarousel extends Component {
     render() {
         var {slider} = this.props;
         return (
-            <Carousel>
+            <Carousel interval="4000" infiniteLoop="true" selectedItem="20" thumbWidth="200" autoPlay="true" stopOnHover="true">
                 {slider.map((slide,i)=>
-                <div>
-                    <img src="assets/1.jpeg" />
-                    <p className="">
-                        hhaha
-                    </p>
+                <div className="slidd">
+                    <img src={slide.icon} />
+                    <span  className="p-a top text-shadow">
+                        <div>We are Pest Control</div>
+                        <div>we Remove pests </div>
+                    </span>
                 </div>
                 )}
-                {/* <div>
-                    <img src="assets/2.jpeg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div> */}
             </Carousel>
         );
     }

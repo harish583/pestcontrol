@@ -1,24 +1,11 @@
 import React from 'react';
 import './index.scss';
 import { Link } from "react-router-dom";
+import services from '../content/services';
 
 class Services extends React.Component {
-    state = {
-      newValuesOfObject : []
-    }
-    componentDidMount=()=>{
-      var service = this.props.allServices;
-      var onlyValues= [];
-      for (let value of Object.values(service)) {
-        onlyValues.push(value);
-      }
-      this.setState({
-        newValuesOfObject:onlyValues
-      })
-    }
     render(){
-    var { Service, allServices } = this.props;
-    var newValuesOfObject = this.state.newValuesOfObject;
+    var { Service } = this.props;
     debugger;
     return (
       <div className="Fact-container-service">
@@ -31,18 +18,17 @@ class Services extends React.Component {
         </div>
          <section className="chose_video_area app-content">
             <div className="chose_left_text">
-              <img src={Service.contentImage} alt="" /> 
+              {/* <img src={Service.contentImage} alt="" />  */}
                 <div className="chose_text_inner">
                     <div className="main_b_title">
                     <h2>{Service.textHeader}</h2>
                     {Service.textContent.map(ele=><><div className="text-justify">{ele}</div><br /></>)}
-					
                 </div>
             </div>
             </div>
             <div className="servivessss">
               <ul>
-                {newValuesOfObject.map((ele,i)=>{
+                {services.map((ele,i)=>{
                   return <li className=""><Link to={ele.url} >{ele.swiperHeadding}</Link></li>
                 })}
               </ul>

@@ -34,7 +34,7 @@
             position: relative;
             color: white;
             &:hover{
-                color: #E8E822;
+                color: teal;
             }
         }
     }
@@ -44,21 +44,21 @@
             font-size: 24px;
             text-decoration: none;
             &:hover{
-                color: #E8E822;
+                color: teal;
             }
         }
     }
     .footer_copy_right{
-        color: #E8E822;
+        color:teal;
         text-align: center;
         a{
-            color: yellow;
+            color: teal;
             display: inline-block;
             div{
                 display: inline-block;
             }
             &:hover{
-                color: yellowgreen;
+                color: teal;
             }
         }
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
 class CardStyle extends React.Component {
   render(){
     var { content } = this.props;

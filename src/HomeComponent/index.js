@@ -3,156 +3,36 @@ import Card from '../Card';
 import CardStyle from '../CardStyle';
 import ControlArea from '../controlArea';
 import ContactUsForm from '../contactUsForm';
-
 import homeswiper from '../images/home-slider/slider-1.gif';
-import fr from '../images/pest control services in Hyderabad.jpg';
-import cockroach from '../images/icon/cockroach.png';
-import spider from '../images/icon/spider.png';
-import ant from '../images/icon/ant.png';
-import beetle from '../images/icon/beetle.png';
-import Bee from '../images/icon/wasp.png';
-import Rodent from '../images/icon/MiceRatRemoval-Icon-01.png';
-import Termite from '../images/icon/termite+icon+black.png';
-import Snake from '../images/icon/10-2-snake-transparent.png';
-import Mosquito from '../images/icon/Animals-Mosquito-icon.png';
-import MosquitoMesh from '../images/icon/images.png';
-import RESIDENTIAL from '../images/download.png';
-import INDUSTRIAL from '../images/factory-industry-512.png';
-import industry from '../images/industry.jpg';
-import cmmerical from '../images/cmmerical.jpg';
-import residential from '../images/residential.jpg';
-
+import cards from '../content/cards';
+import controlAreas from '../content/controlAreas';
+import DemoCarousel from './swiper';
+// import cards from '../'
 class HomeComponent extends React.Component {
-  constructor(props){
-    super(props);
-    this.state ={
-      cards :[
-        {
-          name:"cockroach",
-          more:'services/cockroachpestcontrolservices',
-          content:'The cockroach is characterized by a two-dimensional oval body, long filiform antennae',
-          icon:cockroach
-        },{
-          name:"spider",
-          more:'services/spiderpestcontrolservices',
-          content:'Spiders are crawling pests it has 2 body segments, 8 legs, no adduction mouth components and',
-          icon:spider
-        },{
-          name:"ant",
-          more:'services/antpestcontrolservices',
-          content:'Ant is a small insect typically having a sting. Ant is a crawling pest. Ants are a social ',
-          icon:ant
-        },
-        {
-          name:"Bedbug",
-          more:'services/bedbugpestcontrolservices',
-          content:'Bed bugs have small, flat, oval-shaped bodies. They are wingless. Bed Bug is crawling Pest.',
-          icon:beetle
-        },{
-          name:"Bee",
-          more:'services/beepestcontrolservices',
-          content:'Bees are flying insects closely related to wasps. Most of the bees find at white clover,',
-          icon:Bee
-        },{
-          name:"Rodent",
-          more:'services/Rodentpestcontrolservices',
-          content:'Mice and rats are damage to your property and spread disease. For this purpose, you have to ',
-          icon:Rodent
-        },
-        {
-          name:"Termite",
-          more:'services/termitepestcontrolservices',
-          content:'Termites are most arrive in during the spring and summer month. Termites sometimes are cryptic',
-          icon:Termite
-        },{
-          name:"Snake",
-          more:'services/snakepestcontrolservices',
-          content:'The behavior of the snakes is the vital factor to grasp is that almost all snakes are non-venomous',
-          icon:Snake
-        },{
-          name:"Mosquito",
-          more:'services/Mosquitopestcontrol',
-          content:'Mosquitoes are a slender long-legged fly with aquatic larvae.Most of the Mosquitoes find at the',
-          icon:Mosquito
-        },
-        {
-          name:"Mosquito Mesh",
-          more:'services/Mosquitomeshservices',
-          content:'We provide all types of Mosquito Meshes like Open type mosquito net, Shutter type mosquito net..',
-          icon:MosquitoMesh
-        },{
-          name:"RESIDENTIAL",
-          more:'services/residentialpestcontrol',
-          content:'Residential Pest conteol services in Hyderabad.Most of the Pest find',
-          icon:RESIDENTIAL
-        },{
-          name:"INDUSTRIAL",
-          more:'services/industrialpestcontrol',
-          content:'We provide all types of INDUSTRIAL PEST CONTROL SERVICES',
-          icon:INDUSTRIAL
-        },
-      ],
-      controlAreas:[
-        {
-          name:"Industrial pest control",
-          more:'services/industrialpestcontrol',
-          content:'We eliminate all types of pest Control like mosquitoes, rodents, termites ',
-          icon:industry
-        },
-        {
-          name:"Corporate Pest Control",
-          more:'#',
-          content:'We give 100% guarantee to making your Corporate pest free according to which you can contact us',
-          icon:industry
-        },{
-          name:"commercial pest control",
-          more:'services/Commericalpestcontrol',
-          content:'We eliminate all types of pest Control like mosquitoes, rodents, termites,',
-          icon:cmmerical
-        },{
-          name:"RESIDENTAL pest control",
-          more:'services/residentialpestcontrol',
-          content:'We eliminate all types of pest Control like insect control, termite control,',
-          icon:residential
-        },
-      ],
-      footerSlides:[
-        {
-          name:"Industrial pest control",
-          more:'#',
-          content:'We eliminate all types of pest Control like mosquitoes, rodents, termites ',
-          icon:industry
-        },{
-          name:"commercial pest control",
-          more:'#',
-          content:'We eliminate all types of pest Control like mosquitoes, rodents, termites,',
-          icon:cmmerical
-        },{
-          name:"RESIDENTAL pest control",
-          more:'#',
-          content:'We eliminate all types of pest Control like insect control, termite control,',
-          icon:residential
-        },
-      ]
-    }
-  }
   render(){
-    var cards = this.state.cards;
-    var controlAreas = this.state.controlAreas;
     return (
       <div className="Fact-container">
         <div className="swiper-container">
-          <img src={homeswiper} className="swiper-image"alt=""/>
-          <span  className="p-a top text-shadow">
+          <DemoCarousel slider={cards}/>
+          {/* <img src={homeswiper} className="swiper-image"alt=""/> */}
+          {/* <span  className="p-a top text-shadow">
             <div>We are Pest Control</div>
             <div>we Remove pests </div>
-          </span>
+          </span> */}
         </div>
         <div className="app-content text-center">
           <h2>OUR <br className="title_br" /> Pest control Areas</h2>
           <h6>Great & Awesome Works</h6> 
           <div className="cards-styles-component">
             {controlAreas.map((ele,i)=> <CardStyle content={ele} key={i}/> )}
+          </div>
+        </div>
+        
+        <div className="app-content">
+          <h2 className="text-center">Contact Us </h2>
+          <div className="form-home">
+            <ContactUsForm />
+            <img src={homeswiper}/>
           </div>
         </div>
         <div className="cards-component app-content">
@@ -182,12 +62,45 @@ class HomeComponent extends React.Component {
           <p>With our 24-hour reaction time, we have a tendency to make sure you can have your pest control issue addressed immediately. We have a tendency to create pest protection simple and hassle-free, providing you with the simplest client service expertise within the business. </p>
           <p>If you want any type of information regarding the pest control services to call us on 9949700744 or Click on below.</p>
         </div>
-        <div className="app-content">
-          <h2>Contact Us </h2>
-          <ContactUsForm />
-        </div>
         {/* <Control/ledCarousel /> */}
-        {/* <DemoCarousel slider={this.state.footerSlides}/> */}
+        <div className="app-content">
+          <h2 className="text-center">OUR TESTIMONIALS</h2>
+          <div className="owl-wrapper">
+            <div className="owl-item">
+                <div className="pest-testimonial">
+                  <h3 className="title">Javed Akhter <span className="post">- Delhi</span></h3>
+                  <div className="pest-testimonial-details">
+                      Mourier Pest Control Service has been a pleasure because of their prompt and excellent services by a dedicated team. We have taken their pest control and anti-termite treatment services two years back and its still effective.Our experience has been great so far with them.
+                  </div>
+                </div>
+            </div>
+            <div className="owl-item" >
+                <div className="pest-testimonial">
+                  <h3 className="title">Taposhi Ghosh <span className="post">- Noida</span></h3>
+                  <div className="pest-testimonial-details">
+                      Best service by Gopal Rai. Mourier Pest Control gave very prompt response and services. They resolved our problem immediately and informed us along the way. I would like appreciate and recommend to required person.
+                  </div>
+                </div>
+            </div>
+            <div className="owl-item" >
+                <div className="pest-testimonial">
+                  <h3 className="title">Sadhna Joshi <span className="post">- Faridabad</span></h3>
+                  <div className="pest-testimonial-details">
+                      Excellent service! I am very happy with the service. Very much insect’s problem, so Mourier Pest Control agent removed it. Agent is very reassuring &amp; knowledgeable, excellent throughout. Only negative was agents arrival was slightly later than promised time.
+                  </div>
+                </div>
+            </div>
+            <div className="owl-item" >
+                <div className="pest-testimonial">
+                  <h3 className="title">Rajesh Chowdhury<span className="post">- Ghaziabad</span></h3>
+                  <div className="pest-testimonial-details">
+                      Mourier Pest Control provided Very good service and products are herbal. Great service would recommend for everyone to use. Mourier pest control also provided me with services until the matter is resolved.
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        {/* <DemoCarousel slider={controlAreas}/> */}
       </div>
     );
   }

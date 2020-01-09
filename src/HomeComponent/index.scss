@@ -54,12 +54,38 @@
 .carousel:nth-child(2){
     display: none;
 }
-.cards-component.app-content , .cards-styles-component {
+.cards-component.app-content {
     animation: rightToLeft 2s ease;
     display: grid;
   grid-template-columns: auto auto auto auto;
 }
-.row.latest_news_inner{
+.row.latest_news_inner, .cards-styles-component{
     display: grid;
     grid-template-columns: auto auto auto;
+}
+.slidd img{
+    // display: none;
+}
+.slider-wrapper.axis-horizontal{
+    height: 300px;
+    ul{
+        height: 100%;
+        p{
+            color: white;
+        }
+    }
+}
+.form-home{
+    display: grid;
+    grid-template-columns: auto auto;
+    input{
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    img{
+        width: 90%;
+        height: 90%;
+        margin: 10px;
+    }
 }

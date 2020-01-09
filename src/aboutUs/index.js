@@ -13,59 +13,23 @@ class AboutUs extends React.Component {
     super(props);
     this.state ={
 
-      cards :[
-        {
-          name:"ECO FRIENDLY ",
-          more:'',
-          content:'We are using the 100 % Eco Friendly products to Eliminate the pests. These products are not harm ful to family.',
-          icon:echo
-        },{
-          name:"FREE HOME INSPECTION",
-          more:'',
-          content:'We are providing the free Home Inspection services to the customer and also we are providing 24-hour Customer Support Also.',
-          icon:freeHome
-        },{
-          name:"FAST PEST REMOVAL",
-          more:'',
-          content:'We have a professional and high-quality team, our trained staff will protect your home and family against any pests ',
-          icon:fastPest
-        }
-      ],
-      // controlAreas:[
+      // cards :[
       //   {
-      //     name:"Industrial pest control",
-      //     more:'#',
-      //     content:'We eliminate all types of pest Control like mosquitoes, rodents, termites ',
-      //     icon:industry
+      //     name:"ECO FRIENDLY ",
+      //     more:'',
+      //     content:'We are using the 100 % Eco Friendly products to Eliminate the pests. These products are not harm ful to family.',
+      //     icon:echo
       //   },{
-      //     name:"commercial pest control",
-      //     more:'#',
-      //     content:'We eliminate all types of pest Control like mosquitoes, rodents, termites,',
-      //     icon:cmmerical
+      //     name:"FREE HOME INSPECTION",
+      //     more:'',
+      //     content:'We are providing the free Home Inspection services to the customer and also we are providing 24-hour Customer Support Also.',
+      //     icon:freeHome
       //   },{
-      //     name:"RESIDENTAL pest control",
-      //     more:'#',
-      //     content:'We eliminate all types of pest Control like insect control, termite control,',
-      //     icon:residential
-      //   },
-      // ],
-      // footerSlides:[
-      //   {
-      //     name:"Industrial pest control",
-      //     more:'#',
-      //     content:'We eliminate all types of pest Control like mosquitoes, rodents, termites ',
-      //     icon:industry
-      //   },{
-      //     name:"commercial pest control",
-      //     more:'#',
-      //     content:'We eliminate all types of pest Control like mosquitoes, rodents, termites,',
-      //     icon:cmmerical
-      //   },{
-      //     name:"RESIDENTAL pest control",
-      //     more:'#',
-      //     content:'We eliminate all types of pest Control like insect control, termite control,',
-      //     icon:residential
-      //   },
+      //     name:"FAST PEST REMOVAL",
+      //     more:'',
+      //     content:'We have a professional and high-quality team, our trained staff will protect your home and family against any pests ',
+      //     icon:fastPest
+      //   }
       // ]
     }
   }
@@ -98,9 +62,6 @@ class AboutUs extends React.Component {
                 </div>
             </div>
         </section>
-        {/* <div className="cards-component app-content">
-          {cards.map((ele,i)=> <Card content={ele} key={i}/> )} 
-        </div> */}
         <div className="service_single_inner app-content">          
           <div className="row s_text_inner">
             <div className="col-md-6">

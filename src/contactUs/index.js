@@ -54,7 +54,10 @@ class ContactUs extends React.Component {
                         </form>
                     </div>
                 </div>
-                <div className="col-lg-6">
+                
+            </div> */}
+            <ContactUsForm />
+            <div className="col-lg-6">
                     <div className="contact-page-info">
                         <h3>Head Office</h3>
                         <ul className="border-bottom">
@@ -70,8 +73,6 @@ class ContactUs extends React.Component {
                         </ul>
                     </div>
                 </div>
-            </div> */}
-            <ContactUsForm />
         {/* </div> */}
     </div>
         </div>

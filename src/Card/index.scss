@@ -1,13 +1,15 @@
 
-    .card{
+    a.card{
         border: 1px solid #eee;
-        padding: 10px;
+        // padding: 10px;
+            text-decoration: none;
         margin: 10px;
+        color: red;
         text-align: center;
         position: relative;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
         transition: all 1s ease;
-        margin-top: 100px;
+        // margin-top: 100px;
         &:hover{
             transform: scale(1.04);
             transition: all 1s ease;
@@ -15,13 +17,13 @@
         }
         .card-content{
             .image-card-holder{
-                position: absolute;
-                top: -18%;
-                left: calc(50% - 62px);
-                border: 1px solid;
-                border-radius: 50%;
+                // position: absolute;
+                // top: -18%;
+                // left: calc(50% - 62px);
+                // border: 1px solid;
+                // border-radius: 50%;
                 padding: 18px;
-                background: floralwhite;
+                // background: floralwhite;
                 &:hover{
                     img{
                         transform: rotateY(180deg);
@@ -29,12 +31,24 @@
                     }
                 }
                 img{
-                    width: 100px;
-                    height: 100px;
+                    width: 80px;
+                    height: 80px;
                 }
             }
-            h2{
-                margin-top: 100px;
+            &:hover{
+                h2.nameeee{
+                    text-shadow: 1px 1px 10px black;
+                    color: white;
+                    transition: all 0.5s ease;
+                }
+            }
+            h2.nameeee{
+                font-size: 20px;
+                color: black;
+                transition: all 0.5s ease;
+                text-transform: uppercase;
+                text-decoration: none;
+                
             }
         }
     }

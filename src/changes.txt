@@ -1,0 +1,23 @@
+
+// 1/9/2020 23:42
+// color:teal
+
+
+// remove read more and HTMLContentElement
+
+// img width 80
+
+// image back darkcyan
+
+// workareas homelink 
+
+// commertial, corporate, restorent, hospital, institution, residential, industrial, 
+
+
+// footer bold #12355B
+
+// https://www.mourierpestcontrol.in/ swiper 
+
+// footer content
+
+//gmap
